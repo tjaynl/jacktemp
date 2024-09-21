@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.site-header {
+    padding: var(--size-s) 5dvw; 
+    
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

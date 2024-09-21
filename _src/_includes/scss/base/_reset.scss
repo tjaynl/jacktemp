@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// Global selector reset
+// -----------------------------------------------------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// HTML reset
+// -----------------------------------------------------------------------------
+
+html {
+    box-sizing: border-box;
+    color-scheme: dark light;
+    hanging-punctuation: first last;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: var(--heading-fs, inherit);
+    text-wrap: balance;
+    line-height: 1.1;
+}
+
+p,
+li {
+    text-wrap: pretty;
+    max-width: 65ch;
+}
+
+[role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+// -----------------------------------------------------------------------------
+// IMAGE RESET
+// -----------------------------------------------------------------------------
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    vertical-align: middle;
+}
+
+
+// -----------------------------------------------------------------------------
+// INPUT RESET
+// -----------------------------------------------------------------------------
+
+select, textarea, input, button {
+    font: inherit;
+}
+
+
+// -----------------------------------------------------------------------------
+// BUTTON RESET
+// -----------------------------------------------------------------------------
+
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--button-ff, sans-serif);
+    font-size: var(--button-fs, 1rem);
+    line-height: 1;
+    background: var(--button-background, transparent);
+    -webkit-appearance: none;
+}

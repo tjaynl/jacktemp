@@ -1,0 +1,59 @@
+/* Style the dialog to be centered and on top of other content */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: var(--width-sm);
+}
+
+/* Video container that keeps the aspect ratio */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Make the iframe fill the container */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.modal-close {
+    position: fixed; /* Fixed position in the viewport */
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--neutral-900);
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's on top of everything else */
+    padding: 5px;
+    display: none; /* Initially hidden */
+}
+
+.modal-close:hover {
+    color: red; /* Optional hover effect */
+}
+
+/* Ensure the dialog backdrop has a lower z-index */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999; /* Lower than the close button */
+}

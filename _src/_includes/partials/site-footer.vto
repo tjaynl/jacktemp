@@ -1,0 +1,22 @@
+<footer class="[ footer ] [] [ region ]">
+    <div class="wrapper">
+        <small>&copy; copyright 2024 {{ site.name }}</small>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script type="module" src="/js/main.js"></script>
+{{ if hasModal === true }}
+    <script type="module" src="/js/modal.js"></script>
+{{ /if }}
+
+{{ if isGallery === true }}
+    <script>
+        const imagesData = {{ shared.gallery |> JSON.stringify }};
+    </script>
+    <script type="module" src="/js/gallery.js"></script>
+{{ /if }}
+
+{{ if hasLightbox === true }}
+    <script type="module" src="/js/lightbox.js"></script>
+{{ /if }}

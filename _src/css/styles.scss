@@ -1,0 +1,174 @@
+@use "scss/abstracts" as *;
+
+@forward "scss/base";
+@forward "scss/compositions";
+@forward "scss/utilities";
+@forward "scss/blocks";
+
+
+
+//
+//
+//
+
+h1 {
+    --heading-fs: var(--fs-900);
+    --heading-fw: var(--fw-semibold);
+}
+
+h2 {
+    --heading-fs: var(--fs-700);
+    --heading-fw: var(--fw-semibold);
+}
+
+h3 {
+    --heading-fs: var(--fs-500);
+    --heading-fw: var(--fw-semibold);
+}
+
+
+
+.section__head {
+    position: relative;
+    margin-bottom: var(--size-m);
+
+    &--title {
+        font-size: var(--fs-300);
+        font-weight: var(--fw-regular);
+        font-style: italic;
+        color: var(--accent-500);
+    }
+
+    &--subtitle {
+        font-size: var(--fs-700);
+        font-weight: var(--fw-bold);
+    }
+}
+
+
+
+//
+//
+//
+
+.hero,
+.mast {
+    --region-space: 12.12vmax;
+    position: relative;
+    overflow: clip;
+
+    &__image {
+        position: absolute;
+        opacity: .5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__inner {
+        text-align: center;
+
+        p {
+            max-width: unset;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-weight: var(--fw-bold);
+    }
+}
+
+.playButton {
+    padding: var(--size-s);
+    background-color: var(--neutral-200);
+    border-radius: 999rem;
+    transition: scale 300ms ease-in-out;
+
+    &:is(:hover, :focus) {
+        scale: 1.1;
+    }
+}
+
+
+
+//
+//
+.biography {
+    background-color: var(--background-color-alt);
+}
+
+
+.about {
+
+    p {
+        max-width: 100%;
+    }
+
+    &__image {
+        filter: grayscale(100%);
+    }
+}
+
+
+.gallery {
+    &__item {
+        position: relative;
+        overflow: clip;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: scale 300ms ease-in;
+            aspect-ratio: 1;
+
+            &:is(:hover) {
+                scale: 1.2;
+            }
+        }
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__buttons {
+        margin-top: var(--size-l);
+    }
+}
+
+
+.contact .grid-auto-fit {
+    --gap: var(--size-xl);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.region {
+    padding-block:  var(--region-space, 6.6vmax);
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

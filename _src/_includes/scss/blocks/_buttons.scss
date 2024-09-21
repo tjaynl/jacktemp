@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.button {
+    color: white;
+    background-color: #0c0c0c;
+    text-decoration: none;
+    padding: var(--size-xs) var(--size-m);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: var(--size-3xs);
+    transition: all 300ms ease-in-out;
+    line-height: 1;
+
+    &:is(:hover, :focus) {
+        scale: 1.1;
+    }
+
+    &:focus {
+        scale: 1;
+    }
+}
+
+
+
+.button {
+    &[data-theme="primary"] {
+        color: white;
+        background-color: var(--accent-500);
+    }
+}

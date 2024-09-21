@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.wrapper {
+    --_wrap-width: var(--wrap-width, #{$wrap-width});
+    --_wrap-padding: var(--wrap-padding, #{$wrap-padding});
+
+    max-width: var(--_wrap-width);
+    padding-inline: var(--_wrap-padding);
+    margin-inline: auto;
+}
+
+
+//
+//
+//
+
+.wrapper {
+    &[data-width='narrow'] {
+        --wrap-width: var(--width-md);
+    }
+
+    &[data-width='wide'] {
+        --wrap-width: var(--width-lg);
+    }
+}

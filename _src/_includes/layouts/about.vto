@@ -1,0 +1,31 @@
+---
+layout: layouts/base.vto
+---
+<section class="[ mast ] [ fullwidth ] [ region ]">
+    <img class="mast__image" src="{{ image }}" alt="hero bg image">
+    <div class="wrapper">
+        <h1 class="[ mast__title ] [ text-center ]">{{ title }}</h1>
+    </div>
+</section>
+<section class="[ about ] [ ] [ region ]">
+    <div class="wrapper flow" data-width="wide">
+        <div class="section__head">
+            <span class="section__head--title">{{ about.title }}</span>
+            <h2 class="section__head--subtitle">{{ about.subtitle}}</h2>
+        </div>
+        <p>{{ content |> md }}</p>
+    </div>
+
+    {{# <div class="grid-auto-fit" data-cols="50-50">
+        <div class="flow">
+            {{ content |> md }}
+        </div>
+        <div>
+            <div class="grid-auto-fit" data-cols="50-50">
+                <div class="image">
+
+                </div>
+            </div>
+        </div>
+    </div> #}}
+</section>

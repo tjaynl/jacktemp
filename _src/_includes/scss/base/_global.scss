@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+// -----------------------------------------------------------------------------
+// BODY
+// -----------------------------------------------------------------------------
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADINGS
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color, var(--text-color-alt));
+    font-size: var(--heading-fs, inherit);
+    font-weight: var(--heading-fw, inherit);
+    line-height: 1.1;
+}
+
+
+//
+//
+//
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+
+    padding: var(--size-2xs);
+}

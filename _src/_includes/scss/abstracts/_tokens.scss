@@ -1,0 +1,37 @@
+@use "colors" as *;
+
+
+
+// -----------------------------------------------------------------------------
+// THEME
+// -----------------------------------------------------------------------------
+
+$active-theme: $dark;
+$enable-media-query-dark-mode: false;
+
+
+// -----------------------------------------------------------------------------
+// PAGE
+// -----------------------------------------------------------------------------
+
+$page-width: 1480px;
+$page-padding: 5dvw;
+
+$wrap-width: $page-width;
+$wrap-padding: $page-padding;
+
+
+
+// -----------------------------------------------------------------------------
+// HAMBURGER
+// -----------------------------------------------------------------------------
+
+$hamburger-bar-width: var(--size-m);
+$hamburger-bar-height: 4px;
+
+$hamburger-gap: 4px;
+$hamburger-padding: var(--size-2xs) var(--size-3xs);
+$hamburger-animation-timing: 200ms ease-in-out;
+
+$hamburger-foreground: white;
+$hamburger-background: gray;
