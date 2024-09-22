@@ -34,22 +34,22 @@ dialog {
 }
 
 .modal-close {
-    position: fixed; /* Fixed position in the viewport */
+    position: fixed;
     top: 20px;
     right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--neutral-900);
     cursor: pointer;
-    z-index: 9999; /* Ensure it's on top of everything else */
+    z-index: 1001;
     padding: 5px;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
-.modal-close:hover {
-    color: red; /* Optional hover effect */
+.modal-close > svg {
+    position: relative;
+    z-index: 1002;
+}
+
+.modal-close:hover > svg {
+    fill: white; 
 }
 
 /* Ensure the dialog backdrop has a lower z-index */

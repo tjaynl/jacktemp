@@ -148,6 +148,20 @@ h3 {
 }
 
 
+.site-footer {
+    --region-space: 3.3vmax;
+
+    background-color: #222;
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: var(--size-xl);
+    }
+}
+
+
 
 // -----------------------------------------------------------------------------
 // Utilities
