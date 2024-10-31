@@ -85,12 +85,11 @@ collections:
             widget: "list"
             required: true
             fields:
-            - { name: "name", label: "Name", widget: "sting" }
+            - { name: "name", label: "Name", widget: "string" }
             - { name: "url", label: "Url", widget: "image" }
 
   - name: "about"
     label: "About page"
-    file: ""
     files:
       - name: "about"
         label: "About Section"
@@ -105,6 +104,8 @@ collections:
       - name: "gallery"
         label: "Gallery Section"
         file: "data/about/gallery.yml"
+        editor:
+          preview: false
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "description", label: "Description", widget: "string" }
