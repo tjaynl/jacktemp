@@ -85,7 +85,7 @@ collections:
             widget: "list"
             required: true
             fields:
-            - { name: "name", label: "Name", widget: "sting" }
+            - { name: "name", label: "Name", widget: "string" }
             - { name: "url", label: "Url", widget: "image" }
 
   - name: "about"
