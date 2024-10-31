@@ -9,6 +9,20 @@ media_folder: "static/media"
 public_folder: "/media"
 
 collections:
+  - name: "settings"
+    label: "settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "General settings"
+        file: "hugo.yaml"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "logo", label: "Logo", widget: "image" }
+
+
   - name: "home"
     label: "Home page"
     files:
