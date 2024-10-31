@@ -1,9 +1,9 @@
 baseURL: "https://jacktemp.netlify.app/"
-languageCode: "en-us"
+languageCode: "nl-NL"
 title: Jack van Gestel
 
 enableRobotTXT: true
-paginate: 10
+pagerSize: 10
 summarylength: 0
 enableEmoji: true
 
