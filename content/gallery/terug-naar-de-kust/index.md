@@ -1,7 +1,7 @@
 ---
 visible: true
 title: "Terug naar de kust"
-date: 29-10-2024
+date: 2024-10-29T00:40:04-07:00
 description: "Een korte beschrijving van de album"
 cover_image: "image1.png" # use one of the images as a cover
 images:

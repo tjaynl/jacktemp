@@ -1,7 +1,7 @@
 ---
 visible: true
 title: Test Album
-date: 31-10-2024
+date: 2024-10-31T00:40:04-07:00
 cover_image: koen-meyssen-ZwfjFMpbohg-unsplash.jpg
 description: Een korte beschrijving van de album
 images:
