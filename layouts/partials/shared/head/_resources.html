@@ -1,0 +1,32 @@
+{{ with resources.Get "scss/main.scss" }}
+    {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/styles.css" }}
+    {{ with . | toCSS $opts | minify }}
+        {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ else }}
+            {{ with . | minify | fingerprint }}
+                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+
+{{ with resources.Get "js/main.js" }}
+  {{ if hugo.IsDevelopment }}
+    {{ with . | js.Build }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  {{ else }}
+    {{ $opts := dict "minify" true }}
+    {{ with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/*  load in youtubeLite  */}}
+{{ $youtubeLiteCSS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.css" | resources.Minify }}
+{{ $youtubeLiteJS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.js" | resources.Minify }}
+<link rel="stylesheet" href="{{ $youtubeLiteCSS.Permalink }}">
+<script src="{{ $youtubeLiteJS.Permalink }}"></script>
