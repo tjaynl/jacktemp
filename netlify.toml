@@ -15,3 +15,11 @@
 
 [context.production.environment]
   HUGO_ENV = "production"
+
+If you need Hugo extended version (for SASS/SCSS support)
+[build.environment]
+  HUGO_EXTENDED = "true"
+
+Cache npm dependencies between builds for faster builds
+[[plugins]]
+  package = "@netlify/plugin-cache"
