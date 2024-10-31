@@ -6,8 +6,8 @@ title: "Foto's"
 description: "Profiel fotos"
 images:
   - name: Image name
-    url: "/images/about-img.png"
+    url: "/media/about-img.png"
   - name: Image name
-    url: "/images/about-img2.png"
+    url: "/media/about-img2.png"
   - name: Image name
-    url: "/images/about-img.png"
+    url: "/media/about-img.png"

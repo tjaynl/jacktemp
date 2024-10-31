@@ -1,7 +1,7 @@
 ---
 title: About me
 description: About description
-image: "/images/about-img2.png"
+image: "/media/about-img2.png"
 ---
 Proin lacinia aliquam magna nec convallis. Aliquam erat ipsum, vehicula nec bibendum aliquet, blandit ut ex. Donec tempor tempus nulla vel ornare. In hac habitasse platea dictumst.
 

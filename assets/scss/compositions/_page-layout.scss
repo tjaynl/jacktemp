@@ -27,20 +27,20 @@
     & > :not(.full-width, .full, .popout, .narrow) {
         grid-column: content;
     }
-}
 
-.narrow {
-    grid-column: narrow;
-}
-
-.popout {
-    grid-column: popout;
-}
-
-.full {
-    grid-column: full;
-}
-
-.full-width {
-    grid-column: full;
+    .narrow {
+        grid-column: narrow;
+    }
+    
+    .popout {
+        grid-column: popout;
+    }
+    
+    .full {
+        grid-column: full;
+    }
+    
+    .full-width {
+        grid-column: full;
+    }
 }

@@ -3,8 +3,8 @@
 </footer>
 
 {{/*  load in youtubeLite  */}}
-{{ $lightboxCSS := resources.Get "js/lib/lightbox/lightbox.css" | resources.Minify | resources.Copy "js/libs/lightbox/lightbox.min.css" }}
-{{ $lightboxJS := resources.Get "js/lib/lightbox/lightbox.js" | resources.Minify | resources.Copy "js/libs/lightbox/lightbox.min.js" }}
+{{ $lightboxCSS := resources.Get "js/lib/lightbox/lightbox.css" | resources.Minify | resources.Copy "js/lib/lightbox/lightbox.min.css" }}
+{{ $lightboxJS := resources.Get "js/lib/lightbox/lightbox.js" | resources.Minify | resources.Copy "js/lib/lightbox/lightbox.min.js" }}
 <link rel="stylesheet" href="{{ $lightboxCSS.Permalink }}">
 <script src="{{ $lightboxJS.Permalink }}"></script>
 

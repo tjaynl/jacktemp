@@ -5,5 +5,5 @@ intro: "Nieuwe video"
 title: "Terug naar de kust"
 video_id: "WbjrODL81ok"
 image:
-  url: "images/about-img2.png"
+  url: "/media/about-img2.png"
   alt: "Hero image"

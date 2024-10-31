@@ -3,10 +3,10 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <link rel="canonical" href="http://localhost:1313/about/">
+    <title>Boekingen</title>
+    <link rel="canonical" href="http://localhost:1313/booking/">
 
-    <meta name="description" content="  About description " />
+    <meta name="description" content="  Boekingen description " />
     
     
         
@@ -60,7 +60,7 @@
             
             
             <li class="site-nav__item">
-                <a href="/about" class="site-nav__link" aria-current="page">Biography</a>
+                <a href="/about" class="site-nav__link" >Biography</a>
             </li>
             
         
@@ -90,64 +90,42 @@
     </div>
 </header>
     
-<article class="[] [ full full-width-split-screen ] []">
-    <div class="flow">
-        <h1 class="block__title">Biography</h1>
-        <p>Proin lacinia aliquam magna nec convallis. Aliquam erat ipsum, vehicula nec bibendum aliquet, blandit ut ex. Donec tempor tempus nulla vel ornare. In hac habitasse platea dictumst.</p>
-<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-<p>Ut luctus purus eget urna ullamcorper rutrum. Vivamus elementum mattis elit, sed dignissim lacus pulvinar at. In ac velit massa. Phasellus justo lectus, fringilla nec lorem at, ultrices aliquam dui.</p>
-<p>Vivamus consequat a velit id tristique. Morbi placerat lacus efficitur lectus malesuada lobortis. Integer in nibh sed quam vehicula tincidunt.</p>
+<section class="[ booking ] [ full-width ] [ region ]">
+    <div class="grid" data-cols="two">
+        <div>
+            <h1 class="block__title">Boekingen</h1>
+            <p>Boekingen description</p>
+        </div>
 
+        <form class="flow" action="https://formsubmit.co/info@jackvangestel.nl" method="POST">
+            <div class="form-group flow">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" placeholder="Naam" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="telefoon">Telefoon nr</label>
+                <input type="phone" name="telefoon" placeholder="Telefoon nummer" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required="">
+            </div>
+            <div class="form-group flow">
+                <label class="">Datum</label>
+                <input type="date" name="datum" placeholder="datum" required>
+            </div>
+            <div class="form-group flow">
+                <label for="onderwerp">Onderwerp</label>
+                <input type="text" name="onderwerp" placeholder="Onderwerp" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="bericht">Bericht</label>
+                <textarea rows="4" name="bericht" placeholder="Uw bericht" id="bericht"></textarea>
+            </div>
+            <button class="button" type="submit">Verzend</button>
+        </form>
     </div>
-    <img src="/media/about-img2.png" alt="About me">
-</article>
-
-    
-<section class="[ gallery ] [ full-width ] [ flow region ]">
-    <h2 class="block__title mx-auto">Foto&#39;s</h2>
-    <p class="mx-auto">Profiel fotos</p>
-    <div class="grid" data-rows="masonry">
-        
-        
-            
-            
-                
-            
-        
-            
-            
-                
-            
-        
-            
-            
-                
-            
-        
-        
-            <div class="album__image">
-                <a href="/media/about-img.png" data-lightbox="gallery">
-                    <img src="/media/about-img.png" alt="Image name">
-                </a>
-            </div>
-        
-            <div class="album__image">
-                <a href="/media/about-img2.png" data-lightbox="gallery">
-                    <img src="/media/about-img2.png" alt="Image name">
-                </a>
-            </div>
-        
-            <div class="album__image">
-                <a href="/media/about-img.png" data-lightbox="gallery">
-                    <img src="/media/about-img.png" alt="Image name">
-                </a>
-            </div>
-        
-    </div>
-    
 </section>
-
-
 
     <footer class="[ site-footer ] [ full-width ] [ region ]">
     <p>&copy; Copyright 2024 Jack van Gestel</p>

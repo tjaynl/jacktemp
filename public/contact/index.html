@@ -23,14 +23,14 @@
     
   
 
+    
+    <link rel="stylesheet" href="http://localhost:1313/js/lib/lite-youtube-embed/lite-yt-embed.min.css">
+    <script src="http://localhost:1313/js/lib/lite-youtube-embed/lite-yt-embed.min.js"></script>
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
 
-
-
-
-<link rel="stylesheet" href="http://localhost:1313/js/lib/lite-youtube-embed/lite-yt-embed.min.css">
-<script src="http://localhost:1313/js/lib/lite-youtube-embed/lite-yt-embed.min.js"></script></head>
-
-<body>
+<body class="page-layout">
     <header class="[ site-header ] [ full-width ] []">
     <div class="site-header__inner">
         <a class="brand" href="/">
@@ -74,7 +74,14 @@
             
             
             <li class="site-nav__item">
-                <a class="button" href="/contact">Contact</a>
+                <a href="/contact" class="site-nav__link" aria-current="page">Contact</a>
+            </li>
+            
+        
+            
+            
+            <li class="site-nav__item">
+                <a class="button" href="/booking">Boek nu</a>
             </li>
             
         
@@ -91,31 +98,24 @@
 
         </div>
 
-        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform" class="flow">
-            
-            <input type="hidden" name="accessKey" value="replace-with-your-access-key">
-            <input type="hidden" name="subject" value="Test from jsfiddle">
-            
-            <input type="hidden" name="redirectTo" value="https://www.google.com">
-            <div class="field">
-            <label class="label">Naam</label>
-            <div class="control">
-                <input class="input" type="text" name="name" placeholder="Name" required>
+        <form class="flow region" action="https://formsubmit.co/info@jackvangestel.nl" method="POST">
+            <div class="form-group flow">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" placeholder="Naam" required="">
             </div>
+            <div class="form-group flow">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required="">
             </div>
-            <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-                <input class="input" type="email" name="email" placeholder="Email" required>
+            <div class="form-group flow">
+                <label for="onderwerp">Onderwerp</label>
+                <input type="text" name="onderwerp" placeholder="Onderwerp" required="">
             </div>
+            <div class="form-group flow">
+                <label for="bericht">Bericht</label>
+                <textarea rows="4" name="bericht" placeholder="Uw bericht" id="bericht"></textarea>
             </div>
-            <div class="field">
-            <label class="label">Bericht</label>
-            <div class="control">
-                <textarea class="textarea" name="message" placeholder="Typ uw bericht" required></textarea>
-            </div>
-            </div>
-            <button class="button is-primary" type="Submit">Verzend</button>
+            <button class="button" type="submit">Verzend</button>
         </form>
     </div>
 </section>
@@ -127,8 +127,8 @@
 
 
 
-<link rel="stylesheet" href="http://localhost:1313/js/lib/lightbox/lightbox.min.css">
-<script src="http://localhost:1313/js/lib/lightbox/lightbox.min.js"></script>
+<link rel="stylesheet" href="http://localhost:1313/js/lib/lightbox/lightbox.min.min.css">
+<script src="http://localhost:1313/js/lib/lightbox/lightbox.min.min.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

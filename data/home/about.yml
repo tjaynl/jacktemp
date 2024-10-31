@@ -7,4 +7,4 @@ body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci 
 link:
   title: Lees verder
   url: "about"
-image: "images/about-img.png"
+image: "/media/about-img.png"

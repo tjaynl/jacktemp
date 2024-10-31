@@ -24,8 +24,3 @@
     {{ end }}
   {{ end }}
 {{ end }}
-
-{{ $youtubeLiteCSS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.css" | resources.Minify | resources.Copy "js/lib/lite-youtube-embed/lite-yt-embed.css" }}
-{{ $youtubeLiteJS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.js" | resources.Minify | resources.Copy "js/lib/lite-youtube-embed/lite-yt-embed.js" }}
-<link rel="stylesheet" href="{{ $youtubeLiteCSS.Permalink }}">
-<script src="{{ $youtubeLiteJS.Permalink }}"></script>
